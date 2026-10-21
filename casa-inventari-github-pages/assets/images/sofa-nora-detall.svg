@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Detall del sofà Nora">
+<rect width="600" height="400" fill="#f0eee8"/>
+<circle cx="490" cy="75" r="38" fill="#e4ded1"/>
+<rect x="0" y="340" width="600" height="60" fill="#e4ded1"/>
+<rect x="90" y="140" width="420" height="170" rx="28" fill="#c8b9a5"/><path d="M300 145v160M95 230h410" stroke="#a4937d" stroke-width="4"/>
+<text x="300" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#777066">Detall del sofà Nora</text>
+</svg>

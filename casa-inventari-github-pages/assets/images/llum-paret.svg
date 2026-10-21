@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Llum de paret">
+<rect width="600" height="400" fill="#f0eee8"/>
+<circle cx="490" cy="75" r="38" fill="#e4ded1"/>
+<rect x="0" y="340" width="600" height="60" fill="#e4ded1"/>
+<rect x="270" y="95" width="60" height="190" rx="15" fill="#333b3d"/><path d="M240 150h120l45 85H195z" fill="#e6d7b7" stroke="#c2b18f" stroke-width="6"/><circle cx="300" cy="245" r="22" fill="#fff3cf"/>
+<text x="300" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#777066">Llum de paret</text>
+</svg>

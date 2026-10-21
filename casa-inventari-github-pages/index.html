@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="ca">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casa — inventari</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="./">casa<span>.</span></a>
+    <p>La llista de coses per a casa</p>
+  </header>
+  <main class="container">
+    <section class="intro">
+      <div>
+        <p class="eyebrow">INVENTARI PERSONAL</p>
+        <h1>Idees per a casa</h1>
+        <p class="muted">Tot el que estàs mirant, ordenat en un sol lloc.</p>
+      </div>
+      <label class="search-wrap"><span class="sr-only">Cerca per nom</span><input id="search" type="search" placeholder="Cerca un element…"></label>
+    </section>
+    <section class="filters" aria-label="Filtres per categoria">
+      <span class="filter-label">Categoria</span>
+      <div id="category-filters" class="filter-buttons"></div>
+    </section>
+    <div class="results-line"><span id="results-count">Carregant…</span><span>Preus en euros</span></div>
+    <section id="items-grid" class="items-grid" aria-live="polite"></section>
+    <p id="empty-state" class="empty-state" hidden>No hi ha elements que coincideixin amb aquests filtres.</p>
+  </main>
+  <footer class="site-footer">Fet per a casa · Dades guardades al teu repositori</footer>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

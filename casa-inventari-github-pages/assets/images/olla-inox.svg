@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Olla d'acer inoxidable">
+<rect width="600" height="400" fill="#f0eee8"/>
+<circle cx="490" cy="75" r="38" fill="#e4ded1"/>
+<rect x="0" y="340" width="600" height="60" fill="#e4ded1"/>
+<rect x="170" y="150" width="260" height="155" rx="25" fill="#b9c3c8" stroke="#7e8b91" stroke-width="8"/><rect x="145" y="180" width="25" height="45" rx="8" fill="#7e8b91"/><rect x="430" y="180" width="25" height="45" rx="8" fill="#7e8b91"/><ellipse cx="300" cy="150" rx="130" ry="25" fill="#dce2e5" stroke="#7e8b91" stroke-width="8"/><rect x="265" y="112" width="70" height="15" rx="7" fill="#7e8b91"/>
+<text x="300" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#777066">Olla d'acer inoxidable</text>
+</svg>

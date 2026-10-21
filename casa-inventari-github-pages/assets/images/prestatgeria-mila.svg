@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" role="img" aria-label="Prestatgeria Mila">
+<rect width="600" height="400" fill="#f0eee8"/>
+<circle cx="490" cy="75" r="38" fill="#e4ded1"/>
+<rect x="0" y="340" width="600" height="60" fill="#e4ded1"/>
+<path d="M190 75v270M440 75v270" stroke="#444b49" stroke-width="16"/><path d="M170 115h290M170 175h290M170 235h290M170 295h290" stroke="#b58b5a" stroke-width="18" stroke-linecap="round"/><rect x="210" y="82" width="42" height="30" fill="#8eaa9b"/><rect x="275" y="142" width="35" height="30" fill="#d2a46e"/><rect x="350" y="202" width="50" height="30" fill="#8eaa9b"/>
+<text x="300" y="375" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#777066">Prestatgeria Mila</text>
+</svg>
