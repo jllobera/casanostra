@@ -110,3 +110,31 @@ async function initDetail() {
 
 initIndex();
 initDetail();
+
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.getElementById('add-item-form');
+    
+    if (form) {
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const formData = new FormData(form);
+            
+            // Exemple de captura de dades per processar-les o enviar-les a data/items.json
+            const newItem = {
+                name: formData.get('name'),
+                description: formData.get('description'),
+                category: formData.get('category'),
+                location: formData.get('location'),
+                mainImage: formData.get('mainImage').name,
+                otherImages: Array.from(form.querySelector('#other-images').files).map(file => file.name)
+            };
+
+            console.log('Nou element a afegir:', newItem);
+            alert('Element afegit correctament (simulació)');
+            
+            // Opcional: Redirigir a l'inici
+            window.location.href = 'index.html';
+        });
+    }
+});
