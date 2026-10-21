@@ -171,7 +171,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 const otherImageFiles = Array.from(document.getElementById('other-images').files);
 
                 const mainImageBase64 = mainImageFile ? await compressAndConvertImage(mainImageFile) : null;
-                const otherImagesBase64 = await Promise.all(otherImageFiles.map(compressAndConvertImage));
+                const otherImagesBase64 = otherImageFiles.length > 0 
+                    ? await Promise.all(otherImageFiles.map(compressAndConvertImage)) 
+                    : [];
+
+
 
                 const payload = {
                     id: document.getElementById('id').value,
