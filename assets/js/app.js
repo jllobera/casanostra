@@ -117,24 +117,66 @@ document.addEventListener('DOMContentLoaded', () => {
     if (form) {
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
-            
-            const formData = new FormData(form);
-            
-            // Exemple de captura de dades per processar-les o enviar-les a data/items.json
-            const newItem = {
-                name: formData.get('name'),
-                description: formData.get('description'),
-                category: formData.get('category'),
-                location: formData.get('location'),
-                mainImage: formData.get('mainImage').name,
-                otherImages: Array.from(form.querySelector('#other-images').files).map(file => file.name)
-            };
 
-            console.log('Nou element a afegir:', newItem);
-            alert('Element afegit correctament (simulació)');
-            
-            // Opcional: Redirigir a l'inici
-            window.location.href = 'index.html';
+            const fileToBase64 = (file) => new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.readAsDataURL(file);
+                reader.onload = () => resolve({ name: file.name, data: reader.result });
+                reader.onerror = error => reject(error);
+            });
+
+            try {
+                const mainImageFile = document.getElementById('main-image').files[0];
+                const otherImageFiles = Array.from(document.getElementById('other-images').files);
+
+                const mainImageBase64 = mainImageFile ? await fileToBase64(mainImageFile) : null;
+                const otherImagesBase64 = await Promise.all(otherImageFiles.map(fileToBase64));
+
+                const payload = {
+                    id: document.getElementById('id').value,
+                    name: document.getElementById('name').value,
+                    category: document.getElementById('category').value,
+                    price: document.getElementById('price').value,
+                    store: document.getElementById('store').value,
+                    url: document.getElementById('url').value,
+                    mainImage: mainImageBase64,
+                    otherImages: otherImagesBase64,
+                    description: document.getElementById('description').value,
+                    characteristics: document.getElementById('characteristics').value.split('\n').reduce((acc, line) => {
+                        const [key, value] = line.split(':').map(s => s.trim());
+                        if (key && value) acc[key] = value;
+                        return acc;
+                    }, {})
+                };
+
+
+                // Configuració de GitHub (substitueix pel teuusuari i repositori)
+                const GITHUB_TOKEN = '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'; 
+                const REPO_OWNER = 'jllobera';
+                const REPO_NAME = 'casanostra';
+
+                const response = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/dispatches`, {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `token ${GITHUB_TOKEN}`,
+                        'Accept': 'application/vnd.github+json',
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        event_type: 'add-item-inventari',
+                        client_payload: payload
+                    })
+                });
+
+                if (response.ok) {
+                    alert('Element enviat correctament! En uns minuts s\'actualitzarà a la web.');
+                    window.location.href = 'index.html';
+                } else {
+                    alert('Error al enviar l\'element.');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+            }
         });
     }
 });

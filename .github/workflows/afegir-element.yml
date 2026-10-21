@@ -1,0 +1,31 @@
+name: Actualitzar Inventari
+
+on:
+  repository_dispatch:
+    types: [add-item-inventari]
+
+permissions:
+  contents: write
+
+jobs:
+  process-item:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descarregar codi del repositori
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Executar script d'actualització
+        run: python3 .github/scripts/process_item.py
+        env:
+          EVENT_PAYLOAD: ${{ toJson(github.event.client_payload) }}
+
+      - name: Fer commit i push automàtic
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Nou element afegit automàticament des del formulari"
+          branch: main
