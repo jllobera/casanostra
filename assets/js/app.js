@@ -169,10 +169,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
 
                 if (response.ok) {
-                    alert('Element enviat correctament! En uns minuts s\'actualitzarà a la web.');
+                    alert('Element enviat correctament! Dins d\'uns minuts s\'actualitzarà a la web.');
                     window.location.href = 'index.html';
                 } else {
-                    alert('Error al enviar l\'element.');
+                    // Captura el missatge d'error que retorna GitHub
+                    const errorData = await response.json();
+                    console.error('Detall de l\'error de GitHub:', errorData);
+                    alert(`Error a l'enviar l'element: ${errorData.message || response.statusText}`);
                 }
             } catch (error) {
                 console.error('Error:', error);
@@ -180,3 +183,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+
+                
