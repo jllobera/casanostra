@@ -151,7 +151,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
                 // Configuració de GitHub (substitueix pel teuusuari i repositori)
-                const GITHUB_TOKEN = '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'; 
+                const GITHUB_TOKEN = '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'; 
                 const REPO_OWNER = 'jllobera';
                 const REPO_NAME = 'casanostra';
 
