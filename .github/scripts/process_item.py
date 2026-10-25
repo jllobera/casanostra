@@ -45,11 +45,11 @@ with open(json_path, 'r', encoding='utf-8') as f:
     items = json.load(f)
 
 # Generar un nou ID basat en l'últim o en un comptador
-new_id = max([item.get('id', 0) for item in items], default=0) + 1
+#new_id = max([item.get('id', 0) for item in items], default=0) + 1
 
 # Crear el nou element
 new_item = {
-    "id": new_id,
+    "id": id, #new_id,
     "name": name,
     "category": category,
     "price": price,
