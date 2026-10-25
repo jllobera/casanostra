@@ -1,123 +1,139 @@
 [
-  {
-    "id": "sofa-nora",
-    "name": "Sofà Nora",
-    "category": "Sofàs",
-    "price": 899,
-    "currency": "EUR",
-    "store": "Botiga de mostra",
-    "url": "https://example.com",
-    "mainImage": "sofa-nora.svg",
-    "images": [
-      "sofa-nora.svg",
-      "sofa-nora-detall.svg"
-    ],
-    "description": "Sofà de tres places amb línies senzilles.",
-    "characteristics": {
-      "Color": "Beix",
-      "Amplada": "220 cm",
-      "Material": "Teixit",
-      "Lliurament": "Consultar"
+    {
+        "id": "sofa-nora",
+        "name": "Sofà Nora",
+        "category": "Sofàs",
+        "price": 899,
+        "currency": "EUR",
+        "store": "Botiga de mostra",
+        "url": "https://example.com",
+        "mainImage": "sofa-nora.svg",
+        "images": [
+            "sofa-nora.svg",
+            "sofa-nora-detall.svg"
+        ],
+        "description": "Sofà de tres places amb línies senzilles.",
+        "characteristics": {
+            "Color": "Beix",
+            "Amplada": "220 cm",
+            "Material": "Teixit",
+            "Lliurament": "Consultar"
+        }
+    },
+    {
+        "id": "cadira-lina",
+        "name": "Cadira Lina",
+        "category": "Cadires",
+        "price": 79.9,
+        "currency": "EUR",
+        "store": "Botiga de mostra",
+        "url": "https://example.com",
+        "mainImage": "cadira-lina.svg",
+        "images": [
+            "cadira-lina.svg"
+        ],
+        "description": "Cadira lleugera per a menjador o escriptori.",
+        "characteristics": {
+            "Color": "Roure natural",
+            "Estructura": "Fusta",
+            "Seient": "Entapissat",
+            "Apilable": "No"
+        }
+    },
+    {
+        "id": "taula-roure",
+        "name": "Taula de roure",
+        "category": "Taules",
+        "price": 349,
+        "currency": "EUR",
+        "store": "Botiga de mostra",
+        "url": "https://example.com",
+        "mainImage": "taula-roure.svg",
+        "images": [
+            "taula-roure.svg"
+        ],
+        "description": "Taula de menjador amb acabat de roure clar.",
+        "characteristics": {
+            "Llargada": "160 cm",
+            "Amplada": "90 cm",
+            "Material": "Roure",
+            "Extensible": "No"
+        }
+    },
+    {
+        "id": "olla-inox",
+        "name": "Olla d'acer inoxidable",
+        "category": "Cuina",
+        "price": 44.5,
+        "currency": "EUR",
+        "store": "Botiga de mostra",
+        "url": "https://example.com",
+        "mainImage": "olla-inox.svg",
+        "images": [
+            "olla-inox.svg"
+        ],
+        "description": "Olla per a ús diari; exemple d'element de cuina.",
+        "characteristics": {
+            "Capacitat": "5 L",
+            "Material": "Acer inoxidable",
+            "Inducció": "Sí",
+            "Rentaplats": "Sí"
+        }
+    },
+    {
+        "id": "llum-paret",
+        "name": "Llum de paret",
+        "category": "Il·luminació",
+        "price": 59,
+        "currency": "EUR",
+        "store": "Botiga de mostra",
+        "url": "https://example.com",
+        "mainImage": "llum-paret.svg",
+        "images": [
+            "llum-paret.svg"
+        ],
+        "description": "Llum discreta per a passadís o dormitori.",
+        "characteristics": {
+            "Color": "Negre",
+            "Llum": "LED",
+            "Muntatge": "Paret",
+            "Bombeta inclosa": "Sí"
+        }
+    },
+    {
+        "id": "prestatgeria-mila",
+        "name": "Prestatgeria Mila",
+        "category": "Emmagatzematge",
+        "price": 129,
+        "currency": "EUR",
+        "store": "Botiga de mostra",
+        "url": "https://example.com",
+        "mainImage": "prestatgeria-mila.svg",
+        "images": [
+            "prestatgeria-mila.svg"
+        ],
+        "description": "Prestatgeria oberta per a llibres i objectes.",
+        "characteristics": {
+            "Alçada": "180 cm",
+            "Amplada": "80 cm",
+            "Material": "Fusta i metall",
+            "Prestatges": "5"
+        }
+    },
+    {
+        "id": "sofa-teseo-premium",
+        "name": "Teseo Premium",
+        "category": "Sofàs",
+        "price": "3899.34",
+        "currency": "EUR",
+        "store": "Famaliving",
+        "url": "https://www.fama.es/teseo",
+        "mainImage": "",
+        "otherImages": [],
+        "description": "Sofà amb sentada nube",
+        "characteristics": {
+            "Còmode": "molt",
+            "Rentable": "sí"
+        }
     }
-  },
-  {
-    "id": "cadira-lina",
-    "name": "Cadira Lina",
-    "category": "Cadires",
-    "price": 79.9,
-    "currency": "EUR",
-    "store": "Botiga de mostra",
-    "url": "https://example.com",
-    "mainImage": "cadira-lina.svg",
-    "images": [
-      "cadira-lina.svg"
-    ],
-    "description": "Cadira lleugera per a menjador o escriptori.",
-    "characteristics": {
-      "Color": "Roure natural",
-      "Estructura": "Fusta",
-      "Seient": "Entapissat",
-      "Apilable": "No"
-    }
-  },
-  {
-    "id": "taula-roure",
-    "name": "Taula de roure",
-    "category": "Taules",
-    "price": 349,
-    "currency": "EUR",
-    "store": "Botiga de mostra",
-    "url": "https://example.com",
-    "mainImage": "taula-roure.svg",
-    "images": [
-      "taula-roure.svg"
-    ],
-    "description": "Taula de menjador amb acabat de roure clar.",
-    "characteristics": {
-      "Llargada": "160 cm",
-      "Amplada": "90 cm",
-      "Material": "Roure",
-      "Extensible": "No"
-    }
-  },
-  {
-    "id": "olla-inox",
-    "name": "Olla d'acer inoxidable",
-    "category": "Cuina",
-    "price": 44.5,
-    "currency": "EUR",
-    "store": "Botiga de mostra",
-    "url": "https://example.com",
-    "mainImage": "olla-inox.svg",
-    "images": [
-      "olla-inox.svg"
-    ],
-    "description": "Olla per a ús diari; exemple d'element de cuina.",
-    "characteristics": {
-      "Capacitat": "5 L",
-      "Material": "Acer inoxidable",
-      "Inducció": "Sí",
-      "Rentaplats": "Sí"
-    }
-  },
-  {
-    "id": "llum-paret",
-    "name": "Llum de paret",
-    "category": "Il·luminació",
-    "price": 59,
-    "currency": "EUR",
-    "store": "Botiga de mostra",
-    "url": "https://example.com",
-    "mainImage": "llum-paret.svg",
-    "images": [
-      "llum-paret.svg"
-    ],
-    "description": "Llum discreta per a passadís o dormitori.",
-    "characteristics": {
-      "Color": "Negre",
-      "Llum": "LED",
-      "Muntatge": "Paret",
-      "Bombeta inclosa": "Sí"
-    }
-  },
-  {
-    "id": "prestatgeria-mila",
-    "name": "Prestatgeria Mila",
-    "category": "Emmagatzematge",
-    "price": 129,
-    "currency": "EUR",
-    "store": "Botiga de mostra",
-    "url": "https://example.com",
-    "mainImage": "prestatgeria-mila.svg",
-    "images": [
-      "prestatgeria-mila.svg"
-    ],
-    "description": "Prestatgeria oberta per a llibres i objectes.",
-    "characteristics": {
-      "Alçada": "180 cm",
-      "Amplada": "80 cm",
-      "Material": "Fusta i metall",
-      "Prestatges": "5"
-    }
-  }
 ]
